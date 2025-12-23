@@ -1,0 +1,8 @@
+
+{
+  "name": "Holiday Magic 3D Christmas Tree",
+  "description": "A high-end 3D Christmas experience featuring a particle-based tree, gesture control via MediaPipe, and a customizable memory wall.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
