@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry Christmas - Interactive Memory Tree</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fceea7;
+      overflow: hidden;
+      font-family: 'Times New Roman', serif;
+    }
+    canvas {
+      display: block;
+    }
+    .cinzel {
+      font-family: 'Cinzel', serif;
+    }
+    .gold-glow {
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3);
+    }
+    .gradient-text {
+      background: linear-gradient(to bottom, #ffffff, #d4af37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-btn {
+      background: rgba(212, 175, 55, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid #d4af37;
+      color: #d4af37;
+      transition: all 0.3s ease;
+    }
+    .glass-btn:hover {
+      background: rgba(212, 175, 55, 0.2);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    }
+    #video-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 160px;
+      height: 120px;
+      opacity: 0;
+      pointer-events: none;
+      border: 1px solid #d4af37;
+    }
+    .ui-hidden {
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .spinner {
+      border-top: 1px solid #d4af37;
+      animation: spin 1s linear infinite;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+    "@mediapipe/tasks-vision": "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/+esm",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "three/": "https://esm.sh/three@^0.182.0/"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
