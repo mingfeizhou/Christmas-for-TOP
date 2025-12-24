@@ -1,0 +1,8 @@
+
+{
+  "name": "Luxury Holiday Magic - CV Christmas Tree",
+  "description": "An interactive 3D Christmas experience featuring a procedural particle tree, custom photo frames, and MediaPipe hand gesture controls.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
