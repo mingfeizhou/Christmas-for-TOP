@@ -1,8 +1,0 @@
-
-{
-  "name": "Interactive Holiday Memory Tree",
-  "description": "A high-end 3D Christmas experience featuring particle physics, photo memories, and AI-driven hand gesture control using MediaPipe and Three.js.",
-  "requestFramePermissions": [
-    "camera"
-  ]
-}
